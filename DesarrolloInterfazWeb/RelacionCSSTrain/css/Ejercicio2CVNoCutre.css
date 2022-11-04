@@ -1,0 +1,30 @@
+h1{
+    background-color: aqua;
+    font-family: fantasy;
+    text-align: center;
+}
+
+h3{
+    background-color: aqua;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.indice{
+    margin-top: 10px;
+}
+
+.datospersonales{
+    margin-top: 10px;
+}
+
+.formacionacad{
+    margin-top: 30px;
+}
+
+.explabor{
+    margin-top: 30px;
+}
+
+.formacioncomplem{
+    margin-top: 30px;
+}

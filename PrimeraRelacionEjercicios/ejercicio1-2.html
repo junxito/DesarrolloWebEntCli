@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        console.log("texto en consola");
+        document.write("texto en documento");
+        alert("texto en ventana");
+    </script>
+</head>
+<body>
+    <!--Para que salga un alerta cuando pulsas-->
+    <!--<h1>Salida de texto en JavaScript</h1>
+    <input type="text" name="ejemploTexto" value="valorTexto">
+    <script>
+        console.log("texto en consola");
+        document.write("texto en documento");
+        alert("texto en ventana");
+    </script>-->
+    <!--Para que muestre el texto en una ventana-->
+    <h1>Salida de texto en JavaScript</h1>
+    <input type="text" name="texto">
+    <input type="button" value="mostrar texto" onclick="mostrarTexto()">
+    <script>
+        function mostrarTexto(){
+            alert(texto.value);
+        }
+    </script>
+</body>
+</html>

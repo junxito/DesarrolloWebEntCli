@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link href="css/style.css" rel="stylesheet"> -->
+    </head>
+    <body>
+        <script>
+            //Haciendolo con: Do while 
+            let eleven= [];
+            let i=0;
+            let sum=0;
+            do {
+                if((i*11)>=3000){
+                    break;
+                }
+                eleven[i]=i*11;
+                sum+=eleven[i];
+                console.log(eleven[i]);
+                i++;
+            }while(eleven[i-1] < 3000);
+            document.write(`${eleven}<br>`);
+            document.write(`${sum}`);
+
+            //Haciendolo con: For
+            /*
+            const multiplos=[];
+            var suma= 0;
+            aux= 0;
+            for(let i=0; i<3000;i++){
+                if(i%11==0){
+                    multiplos[aux]=i;
+                    suma+=multiplos[aux];
+                    document.write(multiplos[aux] + " ");
+                    aux++;
+                }
+            }
+            document.write(`La suma de los multiplos es: ${suma}`);*/
+        </script>
+    </body>
+</html>

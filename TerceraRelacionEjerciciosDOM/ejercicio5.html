@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <p>PARRAFO 1</p>
+        <p>PARRAFO 2</p>
+        <p>PARRAFO 3</p>
+        <p>PARRAFO 4</p>
+        <p>PARRAFO 5</p>
+        <input type="button" name="CambiaTodos" value="Cambiar Todos" onclick="cambiarTodos()">
+        <input type="button" name="CambiaPrimero" value="Cambiar primero" onclick="cambiarPrimero()">
+        <input type="button" name="CambiaPares" value="Cambiar pares" onclick="cambiarPares()">
+        <input type="button" name="CambiaImpares" value="Cambiar impares" onclick="cambiarImpares()">
+        <input type="button" name="AnyadeFinal" value="Anyadir al final" onclick="anyadeFinal()">
+        <input type="button" name="Backtopast" value="Estado Original" onclick="Backtopast()">
+
+        <script>
+            function cambiarTodos(){
+                var parrafos = document.querySelectorAll("p");
+                parrafos.forEach(el => {
+                    el.setAttribute("style", "color: red");
+                })
+            }
+        </script>
+    </body>
+</html>

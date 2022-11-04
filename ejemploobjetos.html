@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Animal{
+            constructor(especie,edad,color){
+                this.especie=especie;
+                this.edad=edad;
+                this.color=color;
+            }
+
+            mostrarInfo() {
+                document.write(`Yo soy un ${this.especie} de ${this.edad} y de color ${this.color}</br>`);
+            }
+        }
+        class Perro extends Animal{
+            constructor(especie,edad,color,peso) {
+                super(especie,edad,color);
+                this.peso=peso;
+            }
+            mostrarInfo() {
+                document.write(`Yo soy un ${this.especie} de ${this.edad} y de color ${this.color} y de peso ${this.peso}</br>`);
+            }
+            ladrar(){
+                document.write(`Awooowoo`);
+            }
+        }
+
+        
+        const perro=new Animal("perro",4,"marrón");
+        const tigre=new Animal("tigre",6,"negro y amarillo");
+        const perro2=new Animal("perro",5,"negro",34);
+        perro.mostrarInfo();
+        tigre.mostrarInfo();
+    </script>
+</body>
+</html>

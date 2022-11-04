@@ -1,0 +1,69 @@
+1.Corregir esto:
+<?xml version="1.0"?> 
+<libros> 
+<libro id="quijote"> 
+<titulo>El Quijote</titulo> 
+<autor nombre=cervantes nombre=cervantes> 
+<descripcion>Es el m<ejor libro de cervantes.</descripcion> 
+</libro] 
+</Libros>
+
+Correccion:
+<?xml version="1.0"?> 
+<libros> 
+    <libro id="quijote"> 
+        <titulo>El Quijote</titulo> 
+        <autor nombre="cervantes"/> 
+        <descripcion>Es el mejor libro de cervantes.</descripcion> 
+    </libro>
+</libros>
+
+2.XML:
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nota SYSTEM "DTDbasico_11_mensajeDTD.dtd">
+<nota>
+    <para>Pedro</para>
+    <de>Laura</de>
+    <titulo>Recordatorio</titulo>
+    <contenido>A las 7:00 en la puerta del teatro</contenido>
+</nota>
+
+DTD:
+<!ELEMENT nota(para, de, titulo, contenido)>
+<!ELEMENT para (#PCDATA)>
+<!ELEMENT de(#PCDATA)>
+<!ELEMENT titulo(#PCDATA)>
+<!ELEMENT contenido(#PCDATA)>
+
+3.<ul>: es un elemento en el cual dentro se genera una lista no ordenada.
+<footer>: crea una seccion en la que se introduce la parte final de una pagina.
+<aside>: crea una seccion en la que se introduce el contenido principal de una pagina.
+<div>: crea una seccion a la que se le puede aplicar diferentes estilos o imagenes.
+<th>: es una seccion dentro de una tabla que crea las columnas de la misma.
+
+5.public static void main(String[] args) {
+		int numMayor = 0, numMenor = 0, num;
+		
+		for (int i = 0; i < 10; i++) {
+			
+			num = Integer.parseInt(JOptionPane.showInputDialog("Introduce un número: "));
+			
+			if (numMayor == 0) {
+				numMayor = num;
+			}
+			
+			else if (num > numMayor) {
+				numMayor = num;
+			}
+			if (num == 0) {
+				numMenor = num;
+			}
+			else if (num < numMenor) {
+				numMenor = num;
+			}
+            System.out.println(numMenor + " ");
+		}
+		
+		
+
+	}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Comprobacion del triangulo</h1>
+    <p>Introduce lado a: </p>
+    <input type="text" id="ladoa">
+
+    <p>Introduce lado b: </p>
+    <input type="text" id="ladob">
+
+    <p>Introduce lado c: </p>
+    <input type="text" id="ladoc">
+
+    </br>
+    </br>
+    <input type="button" value="Comprobar triangulo" onclick="triangular(ladoa.value,ladob.value,ladoc.value)">
+    <script>
+        function triangular(ladoa, ladob, ladoc){
+            if((ladoa +ladob)<ladoc ) {
+                document.write("No es un triangulo");
+            }
+            if(ladoa==ladob && ladob==ladoc && ladoa==ladoc) {
+                document.write("El triangulo es equilatero");
+            } else if(ladoa==ladob && ladoa!=ladoc && ladob!=ladoc) {
+                document.write("El triangulo es isosceles");
+            } else if(ladoa!=ladob && ladob!=ladoc && ladoa!=ladoc) {
+                document.write("El triangulo es escaleno");
+            }
+        }
+    </script>
+</body>
+</html>

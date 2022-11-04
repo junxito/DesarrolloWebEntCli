@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link href="css/style.css" rel="stylesheet"> -->
+    </head>
+    <body>
+        <form id="formu">
+            <label for="nombre">Nombre: </label><input type="text" id="nombre">
+            <label for="apellido">Apellido: </label><input type="text" id="apellido"><br>
+            <input type="button" value="Enviar" onclick="enviar();return false">
+            <input type="button" value="Limpiar" onclick="limpiar()">
+        </form>
+        <script>
+            function enviar(){
+                var nom=document.getElementById("nombre").value;
+                var apel=document.getElementById("apellido").value;
+                var msg=document.createElement("p");
+                msg.innerText=`Bienvenido ${nom} ${apel}`;
+                document.body.append(msg);
+            }
+
+            function limpiar(){
+                document.getElementById("nombre").value="";
+                document.getElementById("apellido").value="";
+                var borrado = document.querySelector('p');
+                borrado.remove();
+                
+            }
+        </script>
+    </body>
+</html>
