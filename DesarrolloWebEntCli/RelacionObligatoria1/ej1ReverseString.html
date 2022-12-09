@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        Introduce un texto a invertir : 
+        <input type="text" id="uwu"><br>
+        <input type="button" name="invertir" value="Invertir" onclick="invertir()"><br>
+
+        <script>
+            function invertir(){
+
+                var inverse = document.querySelector("#uwu").value;
+                console.log(inverse);
+                document.write(inverse.split("").reverse().join(""));
+            }
+        </script>
+    </body>
+</html> 

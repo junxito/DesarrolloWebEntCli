@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <ul id="list">
+            <li>Holiwis</li>
+            <li>Holiwis</li>
+            <li>Holiwis</li>
+            <li>Holiwis</li>
+            <li>Holiwis</li>
+        </ul>
+        <select id="posicion">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <input type="button" name="insertar" value="Donde" onclick="insertar(posicion.value)">
+        <script>
+            function insertar(posicion){
+                console.log(posicion);
+                let list= document.getElementById('list');
+                let newli=document.createElement('li');                
+                newli.textContent="UWU";
+
+                list.insertBefore(newli, list.children[posicion-1]);
+                
+            }
+        </script>
+    </body>
+</html>

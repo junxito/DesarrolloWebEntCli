@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <script>
+            function ascend(array){
+                let asc = [...array];
+                asc.sort(function(a,b){return a - b})
+                return asc;
+            }
+            function descend(array){
+                let desc = [...array];
+                desc.sort(function(a,b){return b - a})
+                return desc;
+            }
+            console.log(([20,4,5,30,2]));
+            console.log(ascend([20,4,5,30,2]));
+            console.log(descend([20,4,5,30,2]));
+        </script>
+    </body>
+</html>

@@ -1,0 +1,157 @@
+/*Versión Móvil*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  height: 100vh;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+header {
+  border: solid 1px #000000;
+  text-align: center;
+  background-color: #fae2c1;
+  display: flex;
+  flex-direction: row;
+}
+
+header h1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  width: 100%;
+  border: solid 1px #000000;
+  background-color: #98feeb;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  list-style: none;
+  padding: 5px 8px 5px 8px;
+  border: solid 1px #000000;
+  background-color: #32ff2e;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+aside {
+  display: none;
+}
+
+article {
+  width: 100%;
+  border: solid 1px #000000;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-art {
+  display: flex;
+  flex-direction: column;
+}
+
+.art-chd {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#n1 {
+  justify-content: center;
+  background-color: #ffc0c0;
+  border: solid 1px #000000;
+}
+
+#n2 {
+  background-color: #ffefc0;
+  border: solid 1px #000000;
+}
+
+#n3 {
+  background-color: #f1ffc0;
+  border: solid 1px #000000;
+}
+
+#n4 {
+  justify-content: center;
+  background-color: #d0ffc0;
+  border: solid 1px #000000;
+}
+
+#n5 {
+  justify-content: center;
+  background-color: #c0ebff;
+  border: solid 1px #000000;
+}
+
+#n6 {
+  background-color: #e9c0ff;
+  border: solid 1px #000000;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  border-bottom: solid 1px #000000;
+}
+footer {
+  background-color: #e454af;
+  border: solid 1px #000000;
+  text-align: center;
+}
+
+/*Este es la versión de Escritorio*/
+@media screen and (min-width: 800px) {
+
+  body {
+    max-width: 800px;
+  }
+
+  aside {
+    width: 400px;
+    border: solid 1px #000000;
+    display: flex;
+    flex-direction: column;
+  }
+
+  article {
+    width: 400px;
+  }
+
+  .container-art {
+    flex-direction: row;
+  }
+
+  .art-chd {
+    width: 200px;
+  }
+
+  #n1 {
+    height: 100%;
+  }
+
+  #n4 {
+    height: 100%;
+  }
+
+  #n5 {
+    height: 100%;
+  }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <script>
+            const generarParrafos = () =>{
+                for (let i = 0; i < 5; i++) {
+                    let snoopy = document.createElement('p');
+                    snoopy.innerText= "Parrafo "+(i+1);
+                    document.body.appendChild(snoopy);                    
+                }
+                var button = document.createElement('input');
+                button.setAttribute('type', 'button');
+                button.setAttribute('onclick', 'invertir()');
+                button.setAttribute('value', 'Invertir');
+                document.body.appendChild(button);                
+            }
+            generarParrafos();
+
+            function invertir(){
+                const snoopies=document.querySelectorAll('p');
+                const arrsnoopy=[];
+                snoopies.forEach(function(enrique, i){
+                    arrsnoopy[i]=enrique.innerText;
+                });
+                arrsnoopy.reverse();
+                snoopies.forEach(function(enrique, i){
+                    enrique.innerText=arrsnoopy[i];
+                });
+
+            }
+
+        </script>
+    </body>
+</html>

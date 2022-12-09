@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <p id="p1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aliquid vel beatae eos dolorum. Harum neque 
+            necessitatibus id, labore ullam animi? Molestias quae dolore esse. Tempore odio quis odit similique?
+        </p>
+        <p id="p3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aliquid vel beatae eos dolorum. Harum neque 
+            necessitatibus id, labore ullam animi? Molestias quae dolore esse. Tempore odio quis odit similique?
+        </p>
+        <input type="button" name="crear" value="Crear" onclick="crear()">
+        <input type="button" name="modificar" value="Modificar" onclick="modificar()">
+        <input type="button" name="eliminar" value="Eliminar" onclick="eliminar()">
+        <script>
+            function crear(){
+                let p=document.getElementById('p1');
+                let newp=document.createElement('p');                
+                newp.textContent="Holiwis";
+
+                p.insertBefore(newp, p.children[1]);
+
+                newp.setAttribute('id', 'p2');
+            }
+
+            function modificar(){
+                let p=document.getElementById('p2');           
+                p.textContent="UWU";
+            }
+
+            function eliminar(){
+                document.getElementById('p2').remove();           
+                
+            }
+        </script>
+    </body>
+</html>

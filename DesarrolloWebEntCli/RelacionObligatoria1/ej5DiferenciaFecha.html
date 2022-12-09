@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <script>
+            function diferenciaAnios(fecha1, fecha2){
+                //Entre 1000 para la cant de segundos
+                let diferencia = (fecha2.getTime() - fecha1.getTime()) / 1000;
+
+                //Dividir entre 60 min 60 s y 24 horas dividido entre 365 dias y un cuarto dia, por eso hay años bisiestos
+                diferencia /= (60 * 60 * 24);
+                diferencia /= 365.25;
+
+                return Math.abs(Math.round(diferencia));
+            }
+
+            console.log(new Date());
+
+            console.log(diferenciaAnios(new Date(), new Date(2043, 0, 1)));
+        </script>
+    </body>
+</html>
